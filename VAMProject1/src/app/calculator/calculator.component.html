@@ -1,0 +1,30 @@
+
+<h2>calculator works!</h2><hr>
+
+<table>
+    
+    <tr>
+        <td>
+            
+            FirstNumber: <input type='text' [(ngModel)]='x'><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SecondNumber: <input type='text' [(ngModel)]='y'><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Result:<input type='text' [(ngModel)]='z'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button"  style="background-color:red;border-color:blue; color:white " value='add' id="button" (click)="getResult('+')">
+            <input type="button" style="background-color:green "  value='sub' id="button" (click)="getResult('-')">
+            <input type="button" style="background-color:blue " value='mul' id="button" (click)="getResult('*')">
+            <input type="button" style="background-color:yellow " value='div' id="button" (click)="getResult('/')">
+        </td>
+    </tr>
+</table> 
